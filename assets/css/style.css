@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../imgs/low_contrast_linen.png);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.wrapper {
+    flex: 1 0 auto;
+}
+
+/* ===== NAVBAR ===== */
+#navbar {
+    background: #F57C00;
+    border-radius: 10px;
+}
+
+nav .brand-logo {
+    padding: 0 10px;
+    font-family: 'Boogaloo', cursive;
+    text-shadow: 0px 0px 10px #000;
+}
+
+#nav-mobile,
+#mobile-demo {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+#nav-mobile a {
+    text-shadow: 0px 0px 10px #000;
+}
+
+#mobile-demo {
+    background: url(../imgs/low_contrast_linen.png);
+    border-right: 5px solid #F57C00;
+}
+
+#mobile-demo a {
+    color: #fff;
+}
+
+#mobile-demo a:hover {
+    border-top: 1px solid #F57C00;
+    border-bottom: 1px solid #F57C00;
+    transition: 0.3s ease;
+}
+
+/* ===== HOME PAGE CONTENT ===== */
+#homeContent {
+    background: #fff;
+    border-radius: 10px;
+}
+
+.heading h3 {
+    font-family: 'Boogaloo', cursive;
+    text-align: center;
+    color: #F57C00;
+}
+
+.container img {
+    width: 300px;
+    margin: 6px 15px 10px 0;
+    float: left;
+}
+
+.paragraph {
+    font-family: 'Roboto', sans-serif;
+    line-height: 2;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-indent: 40px;
+}
+
+.paragraph p:nth-of-type(3) {
+    padding-bottom: 30px;
+}
+
+/* ===== FOOTER ===== */
+#footer {
+    background: #F57C00;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
