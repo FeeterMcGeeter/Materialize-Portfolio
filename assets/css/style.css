@@ -51,15 +51,23 @@ nav .brand-logo {
 }
 
 /* ===== HOME PAGE CONTENT ===== */
-#homeContent {
+.main-content {
     background: #fff;
     border-radius: 10px;
 }
 
 .heading h3 {
+    font-size: 35px;
     font-family: 'Boogaloo', cursive;
     text-align: center;
     color: #F57C00;
+    padding-top: 10px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
 .container img {
@@ -80,10 +88,45 @@ nav .brand-logo {
     padding-bottom: 30px;
 }
 
+/* ===== CONTACT PAGE ===== */
+.contact-row {
+    padding: 0 10px;
+}
+
+/* ===== CHANGING COLORS ON INPUT FIELDS WHEN CLICKED ===== */
+.input-field .prefix.active {
+    color: #F57C00;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+    color: #F57C00;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #F57C00;
+    box-shadow: 0 1px 0 0 #F57C00;
+}
+
 /* ===== FOOTER ===== */
 #footer {
     background: #F57C00;
     border-radius: 10px;
     display: flex;
     justify-content: center;
+}
+
+#footer p {
+    padding: 10px;
+    
+}
+
+/* ===== MEDIA QUERIES =====  */
+@media screen and (max-width: 340px) {
+    nav .brand-logo {
+        font-size: 25px;
+    }
 }

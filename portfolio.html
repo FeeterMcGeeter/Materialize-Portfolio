@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title></title>
+    <title>My Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="assets/css/reset.css" rel="stylesheet" type="text/css">
@@ -15,24 +15,32 @@
 </head>
 
 <body>
+    <div class="wrapper">
+        <div class="container">
+            <nav id="navbar">
+                <div class="nav-wrapper">
+                    <a href="index.html" class="brand-logo">Jeffrey Davis</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- ===== HAMBURGER MENU =====  -->
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- ===== FOOTER ===== -->
     <div class="container">
-        <nav id="navbar">
-            <div class="nav-wrapper">
-                <a href="index.html" class="brand-logo">Jeffrey Davis</a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-
-        <ul class="sidenav" id="mobile-demo">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div class="page-footer" id="footer">
+            <p class="white-text">&copy; 2019 Copyright</p>
+        </div>
     </div>
 
     <!-- ===== JQUERY CDN ===== -->
