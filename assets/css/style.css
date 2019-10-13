@@ -126,6 +126,7 @@ hr {
 .card-content a {
     color: #F57C00;
 }
+
 .card-title-description {
     margin-bottom: 20px;
 }
@@ -144,6 +145,13 @@ hr {
 
 .card-reveal .right {
     color: #fff;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
 }
 
 /* ===== CHANGING COLORS ON INPUT FIELDS WHEN CLICKED ===== */
@@ -168,12 +176,31 @@ textarea.materialize-textarea:focus:not([readonly]) {
 #footer {
     background: #F57C00;
     border-radius: 10px 10px 0 0;
+    padding-top: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 #footer p {
     padding: 10px;
+    margin-left: 100px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icons a {
+    color: #fff;
+    font-size: 24px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.icons a:nth-child(3) {
+    margin-right: 100px;
 }
 
 /* ===== MEDIA QUERIES =====  */
@@ -187,6 +214,24 @@ textarea.materialize-textarea:focus:not([readonly]) {
 
     .card {
         margin-right: 0;
+    }
+
+    #footer p {
+        margin-left: 50px;
+    }
+
+    .icons a:nth-child(3) {
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #footer p {
+        margin-left: 10px;
+    }
+    
+    .icons a:nth-child(3) {
+        margin-right: 10px;
     }
 }
 
