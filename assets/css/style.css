@@ -72,6 +72,7 @@ hr {
 
 .container img {
     width: 300px;
+    border-radius: 50%;
     margin: 6px 15px 10px 0;
     float: left;
 }
